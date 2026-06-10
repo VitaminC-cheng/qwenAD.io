@@ -1,0 +1,24 @@
+# Preview/runtime files
+.codex*
+*.log
+
+# Local helper scripts
+crop_image.py
+
+# Unused source drafts
+ChatGPT Image*.png
+resources/
+5.png
+11.png
+
+# Unused large font variants kept locally
+LXGWWenKai-Light.ttf
+LXGWWenKai-Medium.ttf
+LXGWWenKaiMono-*.ttf
+演示秋鸿楷2.0.ttf
+破晓像素_猫啃网/FZG_CN.ttf
+破晓像素_猫啃网/FZG_HAX.*
+
+# System files
+.DS_Store
+Thumbs.db
