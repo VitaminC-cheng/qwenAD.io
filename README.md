@@ -40,19 +40,4 @@ http://127.0.0.1:8000/index.html
 - ECharts 和 echarts-wordcloud CDN
 - 本地字体资源：霞鹜文楷、破晓像素体、秋鸿楷
 
-## 部署到 GitHub Pages
 
-1. 把本项目推送到 GitHub 仓库。
-2. 在仓库页面进入 `Settings` -> `Pages`。
-3. Source 选择 `Deploy from a branch`。
-4. Branch 选择 `main`，目录选择 `/root`。
-5. 保存后等待 GitHub Pages 生成访问链接。
-
-## 文件说明
-
-- `index.html`：页面结构
-- `style.css`：视觉样式与动画
-- `main.js`：滚动、点击、翻转和完成烟花交互
-- `data.js`：词云等轻量数据
-- `*.png`：页面插画和品牌视觉素材
-- `*.ttf` / `*.otf`：页面使用的字体资源
