@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>大学四年，一问到底</title>
+    <link rel="stylesheet" href="./style.css?v=20260609-principle-copy" />
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.1.0/dist/echarts-wordcloud.min.js"></script>
+  </head>
+  <body>
+    <main class="app-shell" aria-label="大学四年，一问到底互动广告">
+      <nav class="side-progress" aria-label="页面进度">
+        <button class="progress-dot is-active" type="button" data-target="page-1" aria-label="封面"></button>
+        <button class="progress-dot" type="button" data-target="page-2" aria-label="Token 解释"></button>
+        <button class="progress-dot" type="button" data-target="page-3" aria-label="大一期末复习"></button>
+        <button class="progress-dot" type="button" data-target="page-4" aria-label="大二小组作业与竞赛"></button>
+        <button class="progress-dot" type="button" data-target="page-5" aria-label="大三论文调研代码"></button>
+        <button class="progress-dot" type="button" data-target="page-6" aria-label="大四开题答辩作品集"></button>
+        <button class="progress-dot" type="button" data-target="page-7" aria-label="创意库"></button>
+        <button class="progress-dot" type="button" data-target="page-8" aria-label="Token 管理意识"></button>
+        <button class="progress-dot" type="button" data-target="page-9" aria-label="AI 素养"></button>
+        <button class="progress-dot" type="button" data-target="page-10" aria-label="结尾 CTA"></button>
+      </nav>
+
+      <aside class="token-rail" data-stage="0" aria-label="100万 Token 纵向能量条">
+        <p>timeline</p>
+        <div class="token-rail-track">
+          <i class="token-rail-fill"></i>
+          <ol class="token-rail-years" aria-hidden="true">
+            <li data-year-stage="1">1</li>
+            <li data-year-stage="2">2</li>
+            <li data-year-stage="3">3</li>
+            <li data-year-stage="4">4</li>
+          </ol>
+        </div>
+      </aside>
+
+      <section class="screen cover-screen" id="page-1">
+        <div class="screen-inner cover-inner">
+          <h1 class="cover-title">
+            <span>大学四年</span>
+            <span>一问到底</span>
+          </h1>
+          <div id="word-cloud" aria-label="学习资料词云"></div>
+          <p class="lead cloud-caption">你需要一个学习管家。</p>
+          <p class="brand-hint">点击千问查看你的学习管家</p>
+          <div class="brand-pair" aria-label="千问与 Token 组合">
+            <button class="qwen-logo-button" type="button" aria-label="点击显示 Token 标志">
+              <img class="qwen-logo" src="./qwen.png" alt="Qwen Logo" />
+            </button>
+            <img class="token-hero-image" src="./token.png" alt="100万 Token，装下你的大学生活" />
+          </div>
+
+          <img class="timeline-sticker" src="./6.png" alt="大学四年时间轴" />
+
+          <button class="primary-action" type="button" data-target="page-2">开始我的 100万 Token 实验</button>
+        </div>
+      </section>
+
+      <section class="screen" id="page-2">
+        <div class="screen-inner">
+          <h2 class="token-size-title"><span>100万个Token，</span><span>到底有多大？</span></h2>
+          <p class="metric-hint">点击卡片查看换算说明</p>
+          <div class="metric-grid">
+            <article class="metric-card flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <strong>150万</strong>
+                  <span>汉字</span>
+                  <p>仅限纯中文文本</p>
+                </div>
+                <div class="flip-card-back">
+                  <p>
+                    <span>相当于约<em class="metric-number">10</em>本</span>
+                    <span>大学教材的</span>
+                    <span>内容量</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="metric-card flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <strong>10部</strong>
+                  <span>长篇小说</span>
+                </div>
+                <div class="flip-card-back">
+                  <p>
+                    <span>每部约<em class="metric-number">15</em>万字</span>
+                    <span>可完整阅读</span>
+                    <span>长篇小说</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="metric-card flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <strong>150时</strong>
+                  <span>演讲稿</span>
+                </div>
+                <div class="flip-card-back">
+                  <p>
+                    <span>约<em class="metric-number">300</em>场</span>
+                    <span><em class="metric-number">20</em>分钟</span>
+                    <span>演讲内容</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="metric-card flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <strong>3万行</strong>
+                  <span>代码</span>
+                  <p>含注释与逻辑结构</p>
+                </div>
+                <div class="flip-card-back">
+                  <p>
+                    <span>约<em class="metric-number">10</em>个</span>
+                    <span>中型项目的</span>
+                    <span>代码量</span>
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="section-label">
+            <span>对一个大学生而言，</span>
+            <span>这意味着什么？</span>
+          </p>
+          <p class="battery-hint">点击每一项任务，为大学生活充能！</p>
+          <div class="battery-interactive">
+            <div class="battery-body">
+              <div class="battery-fill-container">
+                <div class="battery-fill" id="battery-fill"><span class="battery-percent">0%</span></div>
+              </div>
+            </div>
+            <div class="battery-firework" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="chip-list">
+              <span class="chip-item" data-index="0">复习</span>
+              <span class="chip-item" data-index="1">竞赛</span>
+              <span class="chip-item" data-index="2">论文</span>
+              <span class="chip-item" data-index="3">代码</span>
+              <span class="chip-item" data-index="4">答辩</span>
+              <span class="chip-item" data-index="5">创作</span>
+            </div>
+          </div>
+          <img class="battery-footer-image" src="./4.png" alt="学习管家">
+        </div>
+      </section>
+
+      <section class="screen" id="page-3">
+        <div class="screen-inner">
+          <h2 class="freshman-title"><span>大一：考试科目太多，</span><span>复习资料太散。</span></h2>
+          <div class="freshman-material-scene">
+            <div class="course-doc-grid" aria-label="复习资料类型">
+              <span class="course-doc course-doc--math">
+                <b>高数 PDF</b>
+                <i class="doc-icon" aria-hidden="true"></i>
+              </span>
+              <span class="course-doc course-doc--english">
+                <b>大英课件</b>
+                <i class="doc-icon" aria-hidden="true"></i>
+              </span>
+              <span class="course-doc course-doc--politics">
+                <b>思修重点</b>
+                <i class="doc-icon" aria-hidden="true"></i>
+              </span>
+              <span class="course-doc course-doc--intro">
+                <b>专业导论</b>
+                <i class="doc-icon" aria-hidden="true"></i>
+              </span>
+              <span class="course-doc course-doc--notice">
+                <b>群通知截图</b>
+                <i class="doc-icon" aria-hidden="true"></i>
+              </span>
+              <span class="course-doc course-doc--audio">
+                <b>课堂录音</b>
+                <i class="doc-icon" aria-hidden="true"></i>
+              </span>
+            </div>
+            <img class="freshman-idea-image" src="./10.png" alt="" />
+          </div>
+
+          <div class="value-card freshman-value-card flip-card" role="button" tabindex="0" aria-label="点击翻转查看课堂录音转写说明">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <strong class="tooltip-trigger">≈ 100节
+                  <span class="tooltip-content">点击卡片可翻转查看详情</span>
+                </strong>
+                <p>90分钟课堂录音转写稿</p>
+                <small>按一门课16周×每周3小时录音，100万Token可转写约6门课内容。实际消耗受语速、停顿影响。</small>
+              </div>
+              <div class="flip-card-back">
+                <p class="student-speech">再也不用对着录音手动记笔记了！千问帮我转写了上百节课堂录音，一门课16周的内容轻松搞定~</p>
+                <img class="student-speech-image" src="./11-cropped.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <p class="flip-hint">点击卡片，看看千问怎么帮你省下手动整理时间</p>
+
+          <h3>千问能做什么</h3>
+          <ul class="ability-list">
+            <li>整理课程框架</li>
+            <li>提炼高频考点</li>
+            <li>生成思维导图</li>
+            <li>定制复习计划</li>
+          </ul>
+          <p class="gold-line">把一整个学期，压缩成一张知识地图。</p>
+        </div>
+      </section>
+
+      <section class="screen" id="page-4">
+        <div class="screen-inner">
+          <h2>大二：小组作业最难的，不是作业，是协作。</h2>
+          <div class="chat-wall">
+            <p>谁做PPT？</p>
+            <p>方向改了！</p>
+            <p>Final3是最终版！</p>
+            <p>问卷数据还没清洗。</p>
+          </div>
+
+          <div class="value-card sophomore-value-card flip-card" role="button" tabindex="0" aria-label="点击翻转查看成果汇报讲稿说明">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <strong>≈ 300-500份</strong>
+                <p>成果汇报讲稿</p>
+                <small>按每份汇报20页PPT+配套讲稿，每页150-250字估算。</small>
+              </div>
+              <div class="flip-card-back">
+                <p class="report-speech">千问帮我搞定了所有成果汇报讲稿，20页PPT配套内容一键配齐，效率直接起飞！</p>
+                <img class="report-speech-image" src="./11-cropped.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <p class="flip-hint">点击卡片，看看小组汇报怎么一键提速</p>
+
+          <h3>千问能做什么</h3>
+          <div class="radar-chart-container">
+            <canvas id="radar-chart" width="400" height="400"></canvas>
+          </div>
+          <img class="teamwork-gold-image" src="./5-cropped.png" alt="" />
+          <p class="gold-line">队友可能掉线，但思路永远在线。</p>
+        </div>
+      </section>
+
+      <section class="screen" id="page-5">
+        <div class="screen-inner">
+          <h2>大三：资料变专业，问题变复杂，但答案要更清晰。</h2>
+          <img class="research-helper-image" src="./12.png" alt="" />
+          <div class="three-panel">
+            <article>
+              <span>左屏</span>
+              <strong>20篇PDF文献</strong>
+            </article>
+            <article>
+              <span>中屏</span>
+              <strong>访谈、问卷、Excel</strong>
+            </article>
+            <article>
+              <span>右屏</span>
+              <strong>代码、报错、项目文档</strong>
+            </article>
+          </div>
+          <p class="research-stress-hint">你是否也焦头烂额？</p>
+
+          <div class="compact-metrics">
+            <p>≈ 300篇课程论文（5000字/篇）</p>
+            <p>≈ 300份访谈转写稿（30分钟/份）</p>
+            <p>≈ 10个课程代码项目（3000行/项目）</p>
+          </div>
+          <small class="note">实际消耗因公式、代码复杂度浮动，建议优先处理核心章节。</small>
+
+          <h3>千问能做什么</h3>
+          <ul class="ability-list">
+            <li>文献观点对比表</li>
+            <li>访谈主题提炼</li>
+            <li>代码报错定位</li>
+            <li>论证逻辑补全</li>
+            <li>项目架构解析</li>
+          </ul>
+          <p class="gold-line"><span>在洪流中，</span><span>挖出一条通往答案的隧道。</span></p>
+        </div>
+      </section>
+
+      <section class="screen" id="page-6">
+        <div class="screen-inner">
+          <h2 class="senior-title"><span>大四：毕业之前，把四年讲成</span><span>一个答案。</span></h2>
+          <div class="material-stack">
+            <span>开题报告</span>
+            <span>毕业论文</span>
+            <span>导师批注</span>
+            <span>答辩 PPT</span>
+            <span>作品集</span>
+            <span>实习经历</span>
+            <span>面试稿</span>
+            <div class="battery-firework todo-firework" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <p class="todo-hint">点击任务，勾掉已经搞定的毕业待办</p>
+
+          <div class="result-cards">
+            <article>我的研究逻辑</article>
+            <article>我的项目亮点</article>
+            <article>我的答辩表达</article>
+          </div>
+
+          <p class="section-copy">
+            开题报告、答辩讲稿、导师批注、模拟问答、作品集材料和面试稿，最后都指向同一件事：毕业前，怎么把自己做过的事讲清楚。
+          </p>
+
+          <h3>千问能做什么</h3>
+          <ul class="ability-list">
+            <li>开题逻辑校验</li>
+            <li>答辩 PPT 结构建议</li>
+            <li>模拟问答库生成</li>
+            <li>作品集亮点提炼</li>
+            <li>面试话术优化</li>
+            <li>视觉表达方向建议</li>
+          </ul>
+          <p class="gold-line"><span>内容讲清楚了，</span><span>下一步，让它被看见。</span></p>
+        </div>
+      </section>
+
+      <section class="screen" id="page-7">
+        <div class="screen-inner">
+          <h2><span>让讲清楚的内容，</span><span>变成看得见的作品。</span></h2>
+          <p class="section-copy">
+            答辩不是只有讲稿，作品集也不只是文件夹。当千问帮你理清方向，万相可以继续把它生成封面、主视觉、分镜和短片。
+          </p>
+
+          <img class="studio-visual-image" src="./13.png" alt="" />
+
+          <div class="studio-grid">
+            <span>答辩 PPT 封面</span>
+            <span>作品集主视觉</span>
+            <span>毕业项目概念图</span>
+            <span>项目展示短片</span>
+            <span>动态作品集封面</span>
+            <span>答辩开场视觉页</span>
+          </div>
+
+          <div class="price-grid">
+            <article>
+              <h3>图像额度</h3>
+              <p>Qwen-Image 新人免费：各<span class="price-number">100</span>张</p>
+              <p>qwen-image-<span class="price-number">2.0</span>：<span class="price-number">0.2</span>元/张</p>
+              <p>qwen-image-<span class="price-number">2.0</span>-pro：<span class="price-number">0.5</span>元/张</p>
+            </article>
+            <article>
+              <h3>视频额度</h3>
+              <p>万相文生视频 / 图生视频新人免费：<span class="price-number">50</span>秒</p>
+              <p><span class="price-number">720</span>P：<span class="price-number">0.6</span>元/秒</p>
+              <p><span class="price-number">1080</span>P：<span class="price-number">1</span>元/秒</p>
+            </article>
+          </div>
+
+          <p class="section-copy">
+            100张图可以试出答辩 PPT 封面、作品集主视觉、项目概念图。50秒视频可以做5条10秒项目展示短片，或1条完整毕业项目概念片。
+          </p>
+          <small class="note">图像生成按成功生成的图片张数计费，视频生成按成功生成的视频秒数计费；具体免费额度、价格与有效期以阿里云百炼官方页面为准。</small>
+        </div>
+      </section>
+
+      <section class="screen" id="page-8">
+        <div class="screen-inner">
+          <h2><span>AI好用，</span><span>更需“智慧”地用。</span></h2>
+          <p class="lead">
+            100万个 Token 不是无脑丢资料，而是用“AI管理思维”精准提问，掌控节奏。
+          </p>
+          <div class="principle-grid">
+            <article>
+              <strong>少丢垃圾</strong>
+              <p>把重复文件和无关信息先清掉。</p>
+            </article>
+            <article>
+              <strong>先建结构</strong>
+              <p>让 AI 先知道材料属于哪一类。</p>
+            </article>
+            <article>
+              <strong>后问重点</strong>
+              <p>把 Token 用在关键章节和关键问题上。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen" id="page-9">
+        <div class="screen-inner">
+          <h2>会用AI，从管理Token开始。</h2>
+          <ol class="method-list">
+            <li>
+              <span>1</span>
+              <div>
+                <strong>先去重</strong>
+                <p>剔除重复PPT、冗余草稿、无关聊天记录。</p>
+              </div>
+            </li>
+            <li>
+              <span>2</span>
+              <div>
+                <strong>再分组</strong>
+                <p>按「课件/文献/代码/项目」分类上传。</p>
+              </div>
+            </li>
+            <li>
+              <span>3</span>
+              <div>
+                <strong>先概览</strong>
+                <p>让千问生成全局目录、摘要和问题清单。</p>
+              </div>
+            </li>
+            <li>
+              <span>4</span>
+              <div>
+                <strong>再深问</strong>
+                <p>针对核心章节、关键论证、代码Bug精准追问。</p>
+              </div>
+            </li>
+          </ol>
+          <p class="gold-line">每一问，都算数。</p>
+        </div>
+      </section>
+
+      <section class="screen ending-screen" id="page-10">
+        <div class="screen-inner">
+          <h2>大学四年，一问到底。</h2>
+          <p class="lead">
+            大一复习、大二竞赛、大三科研、大四答辩，每个阶段的难题，千问帮你。
+          </p>
+
+          <div class="capability-grid">
+            <article>
+              <span>01</span>
+              <strong>读懂</strong>
+              <p>100万Token吃透全周期资料。</p>
+            </article>
+            <article>
+              <span>02</span>
+              <strong>创作</strong>
+              <p>Qwen-Image/万相生成视觉与视频。</p>
+            </article>
+            <article>
+              <span>03</span>
+              <strong>管理</strong>
+              <p>Token管理台助你高效、合规使用AI。</p>
+            </article>
+            <article>
+              <span>04</span>
+              <strong>成长</strong>
+              <p>从工具使用者进化为AI任务管理者。</p>
+            </article>
+          </div>
+
+          <button class="primary-action cta-action" type="button" data-url="https://www.qianwen.com/">领取新人礼包，<br>启动100万Token成长计划</button>
+          <p class="slogan">千问大模型：<br><span class="slogan-highlight">每一问，都算数。</span></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./data.js"></script>
+    <script src="./main.js?v=20260609-principle-copy"></script>
+  </body>
+</html>
